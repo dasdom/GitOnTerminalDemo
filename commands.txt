@@ -54,4 +54,9 @@ cat hello.c
 git status
 git diff
 git diff --cached
+git add hello.c
+git status
+git commit -m "Added hello.c. Changed README.txt"
+echo "test" > README.txt
+git commit -v
 
