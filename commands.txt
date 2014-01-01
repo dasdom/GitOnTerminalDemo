@@ -12,4 +12,46 @@ git status
 echo "This is just a demo" > README.txt
 cat README.txt
 git status
+git add README.txt
+git status
+git commit -m "Changed README.txt"
+git status
+echo "123" > README.txt
+cat README.txt
+git status
+git commit -a -m "Changed README.txt"
+git status
+echo "456" > README.txt
+git status
+git add README.txt
+echo "Awesome" > README.txt
+cat README.txt
+git status
+git add README.txt
+git commit -m "Changed README.txt"
+git status
+touch test.log
+touch a.tst b.tst c.tst d.tst e.tst
+git status
+echo "[abc]" > .gitignore
+cat .gitignore
+git status
+echo "[a-z].tst" > .gitignore
+git status
+echo "*.log" >> .gitignore
+git status
+git add .gitignore
+git commit -m "Added .gitignore"
+git status
+git "111" > README.txt
+git diff
+git add README.txt
+touch hello.c
+git add hello.c
+git status
+echo "#include <stdio.h>\n\nint main() {\n  puts(\"hello\");\n}" > hello.c
+cat hello.c
+git status
+git diff
+git diff --cached
 
