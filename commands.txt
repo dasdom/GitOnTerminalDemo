@@ -1,0 +1,15 @@
+mkdir git_on_terminal
+cd git_on_terminal
+ls -a
+git init
+ls -a
+touch README.txt
+ls
+git status
+git add README.txt
+git commit -m "Added empty README.txt"
+git status
+echo "This is just a demo" > README.txt
+cat README.txt
+git status
+
